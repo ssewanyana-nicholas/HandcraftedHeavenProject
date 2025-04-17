@@ -29,6 +29,8 @@ const HeroSection: React.FC = () => {
       if (response.ok) {
         const data = await response.json();
         console.log("Login successful:", data);
+        //Set Token Cookie
+        document.cookie = `token=${data.token}; path=/; max-age=3600`; // Set cookie for 1 hour
         router.push("/products"); // Redirect to products page on success
       } else {
         const data = await response.json();
@@ -62,7 +64,7 @@ const HeroSection: React.FC = () => {
               <input
                 className="input"
                 type="text"
-                placeholder="Username"
+                placeholder="Email"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
@@ -110,7 +112,11 @@ const HeroSection: React.FC = () => {
           {/* Links for Registration and Password Reset */}
           <p className="mt-4">
             <a href="/register" className="has-text-dark">
+<<<<<<< HEAD
               Don&apos;t have an account? Register here.
+=======
+              Don&apost have an account? Register here.
+>>>>>>> f598412ddc46164554d3dc5b20f22126a1b2c7a8
             </a>
           </p>
           <p>

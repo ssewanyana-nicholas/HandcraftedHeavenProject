@@ -31,6 +31,29 @@ export async function getProductById(productId: number) {
   }
 }
 
+// Get Product By User ID
+export async function getProductByUserId(user_id: number) {
+  try {
+    const result = await sql`SELECT * FROM products WHERE user_id = ${user_id};`;
+    return result;
+  } catch (error) {
+    console.error(`Error fetching product with user ID ${user_id}:`, error);
+    throw new Error("Could not retrieve product by user ID");
+  }
+}
+
+// Get all product IDs by user ID  // SPECIAL FUNCTION FOR TESTING //
+export async function getProductIdsByUserId(user_id: number): Promise<number[]> {
+  try {
+    const result = await sql`SELECT id FROM products WHERE user_id = ${user_id};`;
+    console.log("Product IDs for user ID", user_id, ":", result); // Log the result for debugging
+    return result.map((row) => row.id);
+  } catch (error) {
+    console.error(`Error fetching product IDs for user ID ${user_id}:`, error);
+    throw new Error("Could not retrieve product IDs by user ID");
+  }
+}
+
 // Get Product By Category
 export async function getProductByCategory(category: string) {
   try {

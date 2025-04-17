@@ -14,8 +14,8 @@ const Navbar: React.FC = () => {
           {[
             { name: "Home", href: "/" },
             { name: "Products", href: "/products" },
-            { name: "About", href: "#" },
-            { name: "Contact", href: "#" },
+            { name: "Sellers", href: "/sellers" },
+            { name: "Create Product", href: "/products/create" }
           ].map((link, index) => (
             <Link key={index} href={link.href} className="navbar-item">
               {link.name}

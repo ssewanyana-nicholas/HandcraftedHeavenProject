@@ -64,7 +64,7 @@ VALUES (
         'Angled Mug - Azure',
         'Blue color, comfortable',
         19.99,
-        'public\images\products\ceramics\angled-mug-azure.webp',
+        'images\products\ceramics\angled-mug-azure.webp',
         'ceramics',
         4
     ),
@@ -72,7 +72,7 @@ VALUES (
         'Bud Vase',
         'Ideal for your flowers',
         29.99,
-        'public\images\products\ceramics\bud-vase.webp',
+        'images\products\ceramics\bud-vase.webp',
         'ceramics',
         4
     ),
@@ -80,7 +80,7 @@ VALUES (
         'Camp Mug',
         'White color with a tiny drawing',
         9.99,
-        'public\images\products\ceramics\camp-mug.webp',
+        'images\products\ceramics\camp-mug.webp',
         'ceramics',
         4
     ),
@@ -88,7 +88,7 @@ VALUES (
         'Cheeseboard',
         'You will enjoy cutting cheese in here',
         9.99,
-        'public\images\products\ceramics\cheeseboard.webp',
+        'images\products\ceramics\cheeseboard.webp',
         'ceramics',
         4
     ),
@@ -96,7 +96,7 @@ VALUES (
         'Dessert Bowl',
         'Ideal for fruits or whatever you want to put in it',
         9.99,
-        'public\images\products\ceramics\dessert-bowl.webp',
+        'images\products\ceramics\dessert-bowl.webp',
         'ceramics',
         4
     ),
@@ -104,7 +104,7 @@ VALUES (
         'Medium Nesting Bowl',
         'Brown-dark color, medium deep',
         9.99,
-        'public\images\products\ceramics\medium-nesting-bowl.webp',
+        'images\products\ceramics\medium-nesting-bowl.webp',
         'ceramics',
         4
     ),
@@ -112,7 +112,7 @@ VALUES (
         'Oval Bowl',
         'White color deeper than others but smaller in its diameter',
         9.99,
-        'public\images\products\ceramics\oval-bowl.webp',
+        'images\products\ceramics\oval-bowl.webp',
         'ceramics',
         4
     ),
@@ -120,7 +120,7 @@ VALUES (
         'Ring Dishes',
         'Tiny and ideal for decoration',
         9.99,
-        'public\images\products\ceramics\ring-dishes.webp',
+        'images\products\ceramics\ring-dishes.webp',
         'ceramics',
         4
     ),
@@ -128,7 +128,7 @@ VALUES (
         'Stripped Mug',
         'Stripped, as simple as that.',
         9.99,
-        'public\images\products\ceramics\stripped-mug.webp',
+        'images\products\ceramics\stripped-mug.webp',
         'ceramics',
         4
     ),
@@ -136,7 +136,7 @@ VALUES (
         'Flour Sack Towel - Ferns',
         'Blue Ferns? Its perfect!',
         9.99,
-        'public\images\products\fibers\flour-sack-towel-ferns.webp',
+        'images\products\fibers\flour-sack-towel-ferns.webp',
         'fibers',
         5
     ),
@@ -144,7 +144,7 @@ VALUES (
         'Flour Sack Towel - Gingko Leaves',
         'How beautiful are Gingkos',
         9.99,
-        'public\images\products\fibers\flour-sack-towel-ginkoLeaves.webp',
+        'images\products\fibers\flour-sack-towel-ginkoLeaves.webp',
         'fibers',
         5
     ),
@@ -152,7 +152,7 @@ VALUES (
         'Flour Sack Towel - Pomegranates',
         'Just some red Pomegranates',
         9.99,
-        'public\images\products\fibers\flour-sack-towels-pomegranates.jpg',
+        'images\products\fibers\flour-sack-towels-pomegranates.jpg',
         'fibers',
         5
     ),
@@ -160,7 +160,7 @@ VALUES (
         'Recycled Cottom Blanket - Blue Geometric',
         'If you like geometric and blankets, this one is for you',
         9.99,
-        'public\images\products\fibers\recycled-cotton-blanket-blueGeometric.webp',
+        'images\products\fibers\recycled-cotton-blanket-blueGeometric.webp',
         'fibers',
         5
     ),
@@ -168,7 +168,7 @@ VALUES (
         'Recycled Cottom Blanket - Bright Stripe',
         'Stripes everywhere',
         9.99,
-        'public\images\products\fibers\recycled-cotton-blanket-brightStripe.webp',
+        'images\products\fibers\recycled-cotton-blanket-brightStripe.webp',
         'fibers',
         5
     ),
@@ -176,7 +176,7 @@ VALUES (
         'Small Wall Hanging - 1',
         'Just a simple deco',
         9.99,
-        'public\images\products\fibers\small-wall-hanging1.webp',
+        'images\products\fibers\small-wall-hanging1.webp',
         'fibers',
         5
     ),
@@ -184,7 +184,7 @@ VALUES (
         'Small Wall Hanging - 2',
         'Tiny and ideal for decoration',
         9.99,
-        'public\images\products\fibers\small-wall-hanging2.webp',
+        'images\products\fibers\small-wall-hanging2.webp',
         'fibers',
         5
     ),
@@ -192,7 +192,7 @@ VALUES (
         'Small Wall Hanging - 3',
         'Another wall hanging, really cute',
         9.99,
-        'public\images\products\fibers\small-wall-hanging3.webp',
+        'images\products\fibers\small-wall-hanging3.webp',
         'fibers',
         5
     ),
@@ -200,7 +200,7 @@ VALUES (
         'Candle - Fireside Embers',
         'Perfect candle for deco',
         9.99,
-        'public\images\products\home-goods\candle-fireSideEmbers.webp',
+        'images\products\home-goods\candle-fireSideEmbers.webp',
         'home-goods',
         6
     ),
@@ -208,7 +208,7 @@ VALUES (
         'Candle - Mediterranean Fig',
         'Ideal if you look for having a slight smell in your house',
         9.99,
-        'public\images\products\home-goods\candle-mediterraneanFig.webp',
+        'images\products\home-goods\candle-mediterraneanFig.webp',
         'home-goods',
         6
     ),
@@ -216,7 +216,7 @@ VALUES (
         'Handled - Cutting Board',
         'You know, for cutting and preparing foods',
         9.99,
-        'public\images\products\home-goods\handled-cutting-board.webp',
+        'images\products\home-goods\handled-cutting-board.webp',
         'home-goods',
         6
     ),
@@ -224,7 +224,7 @@ VALUES (
         'Round - Cutting Board',
         'Another option for cutting boards',
         9.99,
-        'public\images\products\home-goods\round-cutting-board.webp',
+        'images\products\home-goods\round-cutting-board.webp',
         'home-goods',
         6
     ),
@@ -232,7 +232,7 @@ VALUES (
         'Spreader - Blackened',
         'Perfect solution for spreading whatever you need',
         9.99,
-        'public\images\products\home-goods\spreader-blackened.webp',
+        'images\products\home-goods\spreader-blackened.webp',
         'home-goods',
         6
     ),
@@ -240,7 +240,7 @@ VALUES (
         'Spreader',
         'More simple spreader, but it gets the job done.',
         9.99,
-        'public\images\products\home-goods\spreader.webp',
+        'images\products\home-goods\spreader.webp',
         'home-goods',
         6
     ),
@@ -248,7 +248,7 @@ VALUES (
         'Earring - Leaf',
         'Ideal gift for someone special',
         9.99,
-        'public\images\products\jewelery\earring-leaf.webp',
+        'images\products\jewelery\earring-leaf.webp',
         'jewelery',
         7
     ),
@@ -256,7 +256,7 @@ VALUES (
         'Earring - Basic Shape',
         'Who would not love it?',
         9.99,
-        'public\images\products\jewelery\earrings-basicShape.webp',
+        'images\products\jewelery\earrings-basicShape.webp',
         'jewelery',
         7
     ),
@@ -264,7 +264,7 @@ VALUES (
         'Necklace - Amulet',
         'If you belive in protection or good fortune, this is for you!',
         9.99,
-        'public\images\products\jewelery\necklace-amulet.webp',
+        'images\products\jewelery\necklace-amulet.webp',
         'jewelery',
         7
     ),
@@ -272,7 +272,7 @@ VALUES (
         'Necklace - Black Porcelain',
         'Ideal if you like black porcelain',
         9.99,
-        'public\images\products\jewelery\necklace-blackPorcelain.webp',
+        'images\products\jewelery\necklace-blackPorcelain.webp',
         'jewelery',
         7
     ),
@@ -280,7 +280,7 @@ VALUES (
         'Necklace',
         'Just a more simple necklace, but still beautiful',
         9.99,
-        'public\images\products\jewelery\necklace.webp',
+        'images\products\jewelery\necklace.webp',
         'jewelery',
         7
     );

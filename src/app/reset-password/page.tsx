@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
-const ResetPasswordPage: React.FC = () => {
+const ResetPasswordForm: React.FC = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const email = searchParams?.get("email") || ""; // Fallback to an empty string if email is null
@@ -36,6 +36,7 @@ const ResetPasswordPage: React.FC = () => {
       } catch (error) {
         console.error("Error during request:", error);
         setErrorMessage("An unexpected error occurred. Please try again.");
+        console.error("Error fetching user details:", error);
       }
     };
 
@@ -69,6 +70,7 @@ const ResetPasswordPage: React.FC = () => {
     } catch (error) {
       console.error("An unexpected error occurred:", error);
       setErrorMessage("An unexpected error occurred. Please try again.");
+      console.error("Error resetting password:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -163,6 +165,14 @@ const ResetPasswordPage: React.FC = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const ResetPasswordPage: React.FC = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResetPasswordForm />
+    </Suspense>
   );
 };
 

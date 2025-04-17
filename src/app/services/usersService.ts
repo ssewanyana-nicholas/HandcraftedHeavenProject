@@ -55,3 +55,10 @@ export const updateUserPassword = async (
 ): Promise<void> => {
   await sql`UPDATE users SET password = ${hashedPassword} WHERE email = ${email}`;
 };
+
+
+// Get all users
+export const getAllUsers = async (): Promise<User[]> => {
+  const users = await sql<User[]>`SELECT * FROM users`;
+  return users;
+};

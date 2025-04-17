@@ -37,7 +37,11 @@ const RegisterPage: React.FC = () => {
         setErrorMessage(data.message || "Failed to register.");
       }
     } catch (error) {
+<<<<<<< HEAD
       console.error("Registration error:", error);
+=======
+      console.error("Error during registration:", error);
+>>>>>>> f598412ddc46164554d3dc5b20f22126a1b2c7a8
       setErrorMessage("An unexpected error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);

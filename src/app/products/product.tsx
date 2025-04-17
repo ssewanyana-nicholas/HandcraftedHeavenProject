@@ -2,7 +2,7 @@
 
 export async function fetchProducts() {
   try {
-    const response = await fetch("/api/products");
+    const response = await fetch("/api/products/all");
     if (!response.ok) {
       throw new Error("Failed to fetch products");
     }
