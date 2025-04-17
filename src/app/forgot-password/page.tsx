@@ -28,9 +28,8 @@ const ForgotPasswordPage: React.FC = () => {
         setMessage("Failed to send password reset instructions.");
       }
     } catch (error) {
+      console.error("Forgot password error:", error);
       setMessage("An unexpected error occurred. Please try again.");
-    } finally {
-      setIsSubmitting(false);
     }
   };
 

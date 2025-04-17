@@ -1,4 +1,5 @@
 import { getAllProducts } from "@app/services/productsService";
+import Image from 'next/image';
 
 export default async function Features() {
   const products = await getAllProducts();
@@ -15,7 +16,7 @@ export default async function Features() {
             <div key={product.id} className="column is-one-third">
               <div className="box">
                 <figure className="image is-4by3">
-                  <img src={product.image_url} alt={product.name} />
+                  <Image src={product.image_url} alt={product.name} />
                 </figure>
                 <h3 className="title is-4">{product.name}</h3>
                 <p>{product.description}</p>

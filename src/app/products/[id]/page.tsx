@@ -4,6 +4,7 @@ import Navbar from "@app/components/Navbar";
 import Footer from "@app/components/Footer";
 import ReviewForm from "./ReviewForm"; // Import the client component
 import { Row } from "postgres";
+import Image from 'next/image';
 
 export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const data = await params
@@ -45,7 +46,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                     overflow: "hidden",
                   }}
                 >
-                  <img src={product.image_url} alt={product.name} />
+                  <Image src={product.image_url} alt={product.name} />
                 </figure>
                 <p className="is-size-7 mt-4 has-text-centered">{product.description}</p>
               </div>

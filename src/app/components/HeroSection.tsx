@@ -110,7 +110,7 @@ const HeroSection: React.FC = () => {
           {/* Links for Registration and Password Reset */}
           <p className="mt-4">
             <a href="/register" className="has-text-dark">
-              Don't have an account? Register here.
+              Don&apos;t have an account? Register here.
             </a>
           </p>
           <p>

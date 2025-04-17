@@ -1,7 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { User } from "@app/lib/definitions";
 import { createUser, findUserByEmail } from "@app/services/usersService";
-import bcrypt from "bcrypt";
+import bcrypt from 'bcryptjs';
+
 
 export default async function handler(
   req: NextApiRequest,

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ProductBoxProps {
   id: number;
@@ -21,7 +22,7 @@ const ProductBox: React.FC<ProductBoxProps> = ({
   return (
     <div className="box">
       <figure className="image is-4by3">
-        <img src={image_url} alt={name} />
+        <Image src={image_url} alt={name} />
       </figure>
       <div className="content">
         <h3 className="title is-4">{name}</h3>

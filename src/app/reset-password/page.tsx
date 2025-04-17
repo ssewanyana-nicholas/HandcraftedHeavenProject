@@ -34,6 +34,7 @@ const ResetPasswordPage: React.FC = () => {
           setErrorMessage(error.message || "Failed to fetch user details.");
         }
       } catch (error) {
+        console.error("Error during request:", error);
         setErrorMessage("An unexpected error occurred. Please try again.");
       }
     };
@@ -66,6 +67,7 @@ const ResetPasswordPage: React.FC = () => {
         setErrorMessage(error.message || "Failed to reset password.");
       }
     } catch (error) {
+      console.error("An unexpected error occurred:", error);
       setErrorMessage("An unexpected error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);

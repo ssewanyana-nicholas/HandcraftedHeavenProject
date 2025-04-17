@@ -1,30 +1,30 @@
 import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
-import GitHubProvider from "next-auth/providers/github";
+import { NextApiRequest, NextApiResponse } from "next";
+import type { JWT } from "next-auth/jwt";
+import type { Session } from "next-auth";
 
-export default NextAuth({
-  providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    }),
-    GitHubProvider({
-      clientId: process.env.GITHUB_CLIENT_ID!,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET!,
-    }),
-  ],
+// Define NextAuth configuration
+const authOptions = {
+  providers: [], // Empty array to indicate no providers for now
+  
   callbacks: {
-    async jwt({ token, user }) {
+    // JWT callback: adding user ID to the token
+    async jwt({ token, user }: { token: JWT; user?: any }) {
       if (user) {
-        token.id = user.id;
+        token.id = user.id; // Assign user ID to the token
       }
       return token;
     },
-    async session({ session, token }) {
+    
+    // Session callback: adding token ID to the session object
+    async session({ session, token }: { session: Session; token: JWT }) {
       if (session.user) {
-        session.user.id = token.id as string; // Ensure `id` is assigned
+        session.user.id = token.id as string; // Ensure `id` is added to the session user
       }
       return session;
     },
   },
-});
+};
+
+// Export the handler function, not the default NextAuth function
+export default (req: NextApiRequest, res: NextApiResponse) => NextAuth(req, res, authOptions);

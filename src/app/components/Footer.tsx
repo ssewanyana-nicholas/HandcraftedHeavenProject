@@ -1,10 +1,11 @@
+import Image from 'next/image';
 const Footer: React.FC = () => {
     return (
       <footer className="footer has-background-dark has-text-white">
         <div className="content has-text-centered">
           <div className="columns is-centered">
             <div className="column is-4">
-              <img src="/images/general/logo.png" alt="Logo" width={100} height={28} className="mb-4" />
+              <Image src="/images/general/logo.png" alt="Logo" width={100} height={28} className="mb-4" />
               <p className="has-text-grey-light">123 Main Street, City, State</p>
             </div>
             <div className="column is-4">

@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import Link from "next/link"; // Import the Link component
 
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar is-light" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <img src="/images/general/logo.png" alt="Logo" width={100} height={28} className="navbar-item" />
+        <Image src="/images/general/logo.png" alt="Logo" width={100} height={28} className="navbar-item" />
         <span className="navbar-item has-text-weight-bold">Handcrafted Heaven</span>
       </div>
 

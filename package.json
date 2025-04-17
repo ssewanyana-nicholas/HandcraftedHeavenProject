@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "bulma": "^1.0.3",
-    "next": "15.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^15.3.0",
+    "next-auth": "^4.24.11",
     "pg": "^8.14.1",
     "postgres": "^3.4.5",
     "rc-slider": "^11.1.8",
@@ -20,6 +23,9 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/next-auth": "^3.13.0",
     "@types/node": "^20",
     "@types/pg": "^8.11.11",
     "@types/react": "^19",
